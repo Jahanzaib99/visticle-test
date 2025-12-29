@@ -13,4 +13,3 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::delete('/tasks/{task}', [TaskController::class, 'destroy']);
     Route::post('/logout', [AuthController::class, 'logout']);
 });
-

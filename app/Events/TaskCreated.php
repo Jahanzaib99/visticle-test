@@ -8,7 +8,8 @@ use Illuminate\Queue\SerializesModels;
 
 class TaskCreated
 {
-    use Dispatchable, SerializesModels;
+    use Dispatchable;
+    use SerializesModels;
 
     /**
      * The task instance.

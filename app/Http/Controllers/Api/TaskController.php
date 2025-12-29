@@ -19,7 +19,7 @@ class TaskController extends Controller
      * Admins see all tasks, regular users see only their own tasks.
      *
      * @param Request $request
-     * 
+     *
      * @return JsonResponse
      */
     public function index(Request $request): JsonResponse
@@ -43,7 +43,7 @@ class TaskController extends Controller
      * Triggers TaskCreated event which sends email notification and logs the event.
      *
      * @param StoreTaskRequest $request
-     * 
+     *
      * @return JsonResponse
      */
     public function store(StoreTaskRequest $request): JsonResponse
@@ -72,7 +72,7 @@ class TaskController extends Controller
      *
      * @param UpdateTaskRequest $request
      * @param Task $task
-     * 
+     *
      * @return JsonResponse
      */
     public function update(UpdateTaskRequest $request, Task $task): JsonResponse
@@ -106,7 +106,7 @@ class TaskController extends Controller
      *
      * @param Request $request
      * @param Task $task
-     * 
+     *
      * @return JsonResponse
      */
     public function destroy(Request $request, Task $task): JsonResponse
